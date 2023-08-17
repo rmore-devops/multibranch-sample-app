@@ -2,9 +2,9 @@ pipeline{
     agent any
     stages {
         stage ('Run multiple Commands ')
-        {steps {sh 'echo Hi'
-                sh 'echo Bye'
-                sh 'echo $date'}}
+        {steps {'echo Hi'
+                'echo Bye'
+                }}
 
     }
 }
