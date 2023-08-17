@@ -2,11 +2,9 @@ pipeline{
     agent any
     stages {
         stage ('Run multiple Commands ')
-        {steps {echo "Hi"
-                echo "Bye"
-                }}
+        {steps {echo "Hi"}}
         stage ('Read README File')
         { when {branch "fix-*" }
-        steps {cat "README.md"}}
+        steps { echo "Bye"}}
     }
 }
