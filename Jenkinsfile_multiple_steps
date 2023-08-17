@@ -2,8 +2,8 @@ pipeline{
     agent any
     stages {
         stage ('Run multiple Commands ')
-        {steps {'echo Hi'
-                'echo Bye'
+        {steps {echo "Hi"
+                echo "Bye"
                 }}
 
     }
