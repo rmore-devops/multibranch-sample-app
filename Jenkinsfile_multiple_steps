@@ -7,6 +7,6 @@ pipeline{
                 }}
         stage ('Read README File')
         { when {branch "fix-*" }
-        steps {more "README.md"}}
+        steps {"more README.md"}}
     }
 }
