@@ -5,6 +5,8 @@ pipeline{
         {steps {echo "Hi"
                 echo "Bye"
                 }}
-
+        stage ('Read README File')
+        { when {branch "fix-*" }
+        steps {type "README.md"}}
     }
 }
